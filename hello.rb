@@ -2,5 +2,6 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  'Hello, world! Hello, Sinatra!!'
+  p = ENV['PASSWORD']
+  "Hello, Sinatra!! ENV_PASSWORD=#{p}"
 end
